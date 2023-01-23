@@ -52,7 +52,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -234,7 +234,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +279,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +324,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +369,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -414,7 +414,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -459,7 +459,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -504,7 +504,7 @@
 						<td
 							class="cursor-pointer"
 							data-bs-toggle="modal"
-							data-bs-target="#weekDays"
+							data-bs-target="#create-edit-modal"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -528,12 +528,12 @@
 			</table>
 			<div
 				class="modal fade"
-				id="weekDays"
+				id="create-edit-modal"
 				tabindex="-1"
-				aria-labelledby="weekDays"
+				aria-labelledby="create-edit-modal"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog mw-fit">
+				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button
@@ -544,40 +544,65 @@
 							></button>
 						</div>
 						<div class="modal-body">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Пн </label>
+							<div class="mb-3">
+								<label class="form-label">Название</label>
+								<input type="text" class="form-control" />
 							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Вт </label>
+							<div class="d-flex justify-content-between">
+								<div class="mb-3">
+									<label class="form-label">Паломническая цена</label>
+									<input type="text" class="form-control" />
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Пешая цена</label>
+									<input type="text" class="form-control" />
+								</div>
 							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Ср </label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Чт </label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Пт </label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Сб </label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" />
-								<label class="form-check-label"> Вс </label>
+
+							<label class="form-label">Выбор дней недели</label>
+
+							<div class="d-flex justify-content-between">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Пн </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Вт </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Ср </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Чт </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Пт </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Сб </label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" />
+									<label class="form-check-label"> Вс </label>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<button class="btn btn-primary mb-3">Добавить экскурсию</button>
+			<button
+				class="btn btn-primary mb-3"
+				data-bs-toggle="modal"
+				data-bs-target="#create-edit-modal"
+			>
+				Добавить экскурсию
+			</button>
 
 			<div class="form-check mb-3">
 				<input class="form-check-input" type="checkbox" />
