@@ -119,7 +119,11 @@
 						<td></td>
 						<td></td>
 						<td>
-							<button class="btn btn-outline-info">
+							<button
+								class="btn btn-outline-info"
+								data-bs-toggle="modal"
+								data-bs-target="#send-notification"
+							>
 								Отправить уведомления
 							</button>
 							<button class="btn btn-outline-warning">Сводка</button>
@@ -137,7 +141,11 @@
 						<td></td>
 						<td></td>
 						<td>
-							<button class="btn btn-outline-info">
+							<button
+								class="btn btn-outline-info"
+								data-bs-toggle="modal"
+								data-bs-target="#send-notification"
+							>
 								Отправить уведомления
 							</button>
 							<button class="btn btn-outline-warning">Сводка</button>
@@ -155,7 +163,11 @@
 						<td></td>
 						<td></td>
 						<td>
-							<button class="btn btn-outline-info">
+							<button
+								class="btn btn-outline-info"
+								data-bs-toggle="modal"
+								data-bs-target="#send-notification"
+							>
 								Отправить уведомления
 							</button>
 							<button class="btn btn-outline-warning">Сводка</button>
@@ -173,7 +185,11 @@
 						<td></td>
 						<td></td>
 						<td>
-							<button class="btn btn-outline-info">
+							<button
+								class="btn btn-outline-info"
+								data-bs-toggle="modal"
+								data-bs-target="#send-notification"
+							>
 								Отправить уведомления
 							</button>
 							<button class="btn btn-outline-warning">Сводка</button>
@@ -191,7 +207,11 @@
 						<td></td>
 						<td></td>
 						<td>
-							<button class="btn btn-outline-info">
+							<button
+								class="btn btn-outline-info"
+								data-bs-toggle="modal"
+								data-bs-target="#send-notification"
+							>
 								Отправить уведомления
 							</button>
 							<button class="btn btn-outline-warning">Сводка</button>
@@ -199,6 +219,36 @@
 					</tr>
 				</tbody>
 			</table>
+
+			<div
+				class="modal fade"
+				id="send-notification"
+				tabindex="-1"
+				aria-labelledby="send-notification"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="btn-close btn-sm"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<div class="d-flex justify-content-between align-items-end">
+								<div>
+									<label class="form-label">Наименование судна</label>
+									<input type="text" class="form-control" />
+								</div>
+								<button class="btn btn-primary">Отправить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<nav aria-label="Page navigation example">
 				<ul class="pagination">
