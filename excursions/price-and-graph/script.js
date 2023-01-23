@@ -1,6 +1,6 @@
 const { createApp } = Vue
 
-const main = Vue.createApp({
+const main = createApp({
 	template: /*html*/ `
 		<div class="container">
 			<h2 class="mb-3">Экскурсии- Цены и график</h2>
