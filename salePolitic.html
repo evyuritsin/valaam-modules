@@ -28,7 +28,11 @@
 						<td>Инвалиды</td>
 						<td>&nbsp</td>
 						<td>&nbsp</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -65,7 +69,11 @@
 						<td>Пенсионеры</td>
 						<td>&nbsp</td>
 						<td>&nbsp</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -102,7 +110,11 @@
 						<td>Студенты</td>
 						<td>&nbsp</td>
 						<td>&nbsp</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -139,7 +151,11 @@
 						<td>Аспиранты</td>
 						<td>&nbsp</td>
 						<td>&nbsp</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -176,7 +192,11 @@
 						<td>Школьники от 12 лет (вкл.)</td>
 						<td>&nbsp</td>
 						<td>12</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -213,7 +233,11 @@
 						<td>дети до 6 лет (вкл.) в сопровождении одного взрослого</td>
 						<td>&nbsp</td>
 						<td>6</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -250,7 +274,11 @@
 						<td>дети от 7 до 12 лет (вкл.)</td>
 						<td>7</td>
 						<td>12</td>
-						<td class="cursor-pointer">
+						<td
+							class="cursor-pointer"
+							data-bs-toggle="modal"
+							data-bs-target="#create-sales"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
@@ -285,7 +313,53 @@
 					</tr>
 				</tbody>
 			</table>
-			<button class="btn btn-primary btn-lg">+ Добавить категорию</button>
+
+			<button
+				class="btn btn-primary btn-lg"
+				data-bs-toggle="modal"
+				data-bs-target="#create-sales"
+			>
+				+ Добавить категорию
+			</button>
+
+			<div
+				class="modal fade"
+				id="create-sales"
+				tabindex="-1"
+				aria-labelledby="create-sales"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="btn-close btn-sm"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<div class="mb-3">
+								<label class="form-label">Наименование категории</label>
+								<input type="text" class="form-control" />
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="mb-3">
+									<label class="form-label">Возраст от</label>
+									<input type="number" class="form-control" />
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Возраст до</label>
+									<input type="number" class="form-control" />
+								</div>
+							</div>
+							<button class="btn btn-primary d-block ms-auto">Добавить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<table class="table table-bordered text-center mt-4">
 				<thead>
 					<th>Категория</th>
