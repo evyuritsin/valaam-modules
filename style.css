@@ -1,0 +1,11 @@
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.mw-fit {
+	max-width: fit-content;
+}
+
+.resize-none {
+	resize: none;
+}
